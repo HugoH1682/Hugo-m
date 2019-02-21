@@ -1,0 +1,56 @@
+html,*,body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    height: 100%;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+
+.divcontacto{
+    width: 100%;
+    height: 10%;;
+    margin-top: 3%;
+}
+
+#divwhole{
+	padding-top: 5%;
+}
+
+.acontacto{
+	font-weight: bold;
+    font-size: 2rem;
+	text-align: center;
+	display: block; 
+	text-decoration: none;
+	color: black;
+	transition: 0.4s;
+}
+
+.acontacto:hover{
+	color: salmon;
+	transition: 0.8s;
+}
+
+.fboton{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:white;
+	color:black;
+	border-radius:50px;
+	text-align:center;
+    transition: 0.4s;
+}
+
+
+
+.fboton:hover{
+	transition: 0.8s;
+	color: salmon;
+}
+
+.mas{
+	margin-top:22px;
+}
+
