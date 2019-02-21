@@ -1,9 +1,8 @@
+/* OK AQUÍ LE TRATO DE DAR FORMA A TODA LA PÁGINA EN GENERAL, CON SU TYPEFACE Y TAMAÑO, ADEMÁS LO DE BOX-SIZING PARA QUE TODO SE AJUSTE, Y EL FONDO DE LA PÁGINA, POR QUÉ NO*/
 html,body{
-    
     height: 100%;
     font-size: 14px;
     font-family: 'Dosis', sans-serif;
-   
     margin: 0;
     background-image: url("img correo/home_hero@2x.jpeg");
     background-repeat: no-repeat;
@@ -12,12 +11,6 @@ html,body{
     box-sizing: border-box; 
 }
 
-:after,
-:before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 #idwhole{
     position: relative; 
@@ -25,6 +18,8 @@ html,body{
     width: 100%;
 }
 
+
+/*LOGO APROXIMADAMENTE DONDE EL ORIGINAL, CON PORCENTAJES DEFINIENDO SU POSICIÓN Y TAMAÑO PARA QUE SE ADAPTE MEJOR*/
 #idlogo{
     margin-left: 2%;
     width: 18%;
@@ -32,13 +27,15 @@ html,body{
     margin-top: 1%;
 }
 
+
+/*POSICIONO EL NAVBAR EN LA ESQUINA DERECHA ESTABLECIENDO SU POSICIÓN ABSOLUTA EN EL IDWHOLE RELATIVE*/
 #div-top-right-corner{
     position: absolute;
     right: 0%;
     top:4%;
     
 }
-
+ /*ESTA ES LA CLASE QUE STYLES EL TEXTO DEL NAVBAR Y ADEMAS UN TRANSITION PARA HACER EL EFECTO HOVER CUANDO SE QUITA EL MOUSE O POINTER*/
 .ptopright{
     padding-top: 0.7%;
     display: inline-block;
@@ -50,6 +47,7 @@ html,body{
     font-weight: 500;
 }
 
+/*EFECTO GLOW CUANDO SE PASA SOBRE LOS ELEMENTOS EN EL NAVBAR*/
 .ptopright:hover{
     transition-delay: 1s;
     transition:.3s all;
@@ -57,6 +55,7 @@ html,body{
     cursor: pointer;
 }
 
+/*EFECTO ESPECIFICIO EN EL NAVBAR PARA CONTACTOS QUE TIENE UN COLOR ROJO ENTONCES ASÍ SU GLOW*/
 #pcontacto {
     color: #ED2939;
     margin-right: 2rem;
@@ -64,10 +63,12 @@ html,body{
     font-weight: bold;
 }
 
+/*GLOW ROJO DE CONTACTOS*/
 #pcontacto:hover {
     text-shadow: 0px 0px 20px  #ED2939;
 }
 
+/*COLOCO EL TEXTO CENTRADO EN TODO EL VIEWPORT, POR ESO EL ABSOLUTE*/
 #divcentro{
     position: absolute;
     transform: translate(-50%,-50%);
@@ -76,6 +77,8 @@ html,body{
     
 }
 
+
+/*LE DOY ESTILO AL TEXTO DEL DIV EN EL CENTRO DEL LANDING PAGE*/
 #ptextoCentro{
     color: #ED2939;
     text-align:  center;
@@ -84,6 +87,7 @@ html,body{
   
 }
 
+/*AQUI LE DOY ESTILO AL ANCHOR TAG PARA QUE NO SEA AZUL, Y PARA QUE SE PUEDA HACER EL EFECTO HOVER DE BLANCO A ROJO*/
 .atextodebajo:link{
     color: white;
 }
@@ -107,13 +111,15 @@ color:#ED2939;
     
 }
 
+/*AQUI PONGO LOS SERVICIOS UNO JUNTO A OTRO, DANDOLES UNA SEPARACIÓN HACIA LA DERECHA*/
 .pen{
     display: inline-block;
     color: white;
     margin-right: 5%;
-    ico 
+    
 }
 
+/*ESTE ES EL ESTILO PARA EL BOTON DE SCROLL DOWN, NO TAN PARECIDO AL QUE TIENE LA PÁGINA ORIGINAL, PERO TAMPOCO ESTÁ MAL*/
 .circulo {
     display: inline-block;
     width:10px;
@@ -159,6 +165,8 @@ color:#ED2939;
     opacity: 1;
     transition: all .5s ease-in 3s;
   }
+
+/*EL DIV DEBAJO DEL LANDING PAGE LO ESTABLEZCO A UNA ALTURA DEL 100% PARA QUE CUBRA LA PÁGINA SIGUIENTE ENTERA*/
 
 .divvacio{
     height: 100%;;
