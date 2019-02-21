@@ -5,7 +5,7 @@
             $dbusuario="root";
             $dbcontrasena="";
             $dbnombre="contactos";
-            //creo la conexión con base de datos
+            //CREO LA CONEXIÓN CON LA BASE DE DATOS
             $conn = new mysqli ($host,$dbusuario,$dbcontrasena,$dbnombre);
             $sql = "DELETE FROM contactos WHERE nombre=$_POST['Nombre']";
             if($conn->query($sql)){
