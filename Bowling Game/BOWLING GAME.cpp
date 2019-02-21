@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main(){
-	
+	//VARIABLES TANTO PARA RECOLECCIÓN DE DATOS COMO MANIPULACIÓN
 	int tiros[10][2],i,j=1,suma=0,puntajeTotal=0,strikes[10];
-	//Recolectar scores
+	//RECOLECTO LAS SCORES LLENADO LA MATRIZ DE 10 FILAS CON 2 COLUMNAS, SIENDO LA VARIABLE CONTROLADORA I LAS FILAS, Y J LAS COLUMNAS
 	for(i=1;i<=10;i++){
 	
 			printf("%d.- Inserta bolos que tiraste en el primer tiro: ",i);
@@ -17,7 +17,7 @@ int main(){
 			 }
 				
 }
-   //Sumarlas
+   //SUMO LOS CONTENIDOS DE MI MATRIZ VALIDANDO LAS REGLAS DEL SCORING POR FIN
    
    for(i=1;i<=10;i++){
    	if(strikes[i]==1){
@@ -30,5 +30,7 @@ int main(){
 	   }
 	   
    }
+	
+//IMPRIMO LA PUNTUACIÓN TOTAL DEL USUARIO
    printf("%d",puntajeTotal);
 }
