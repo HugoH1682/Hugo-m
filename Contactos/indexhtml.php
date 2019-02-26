@@ -20,6 +20,7 @@ $dbcontrasena="";
 $dbnombre="contactos";
 //creo la conexión con base de datos
 $conn = new mysqli ($host,$dbusuario,$dbcontrasena,$dbnombre);
+//Imprimo los elementos de mi base de datos usando la función fecth array
 $sql = "SELECT Nombre FROM contactos ";
 $resultado = mysqli_query($conn, $sql);
     $arrayresultado = mysqli_fetch_array($resultado);
